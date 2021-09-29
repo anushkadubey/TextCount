@@ -10,6 +10,10 @@ function Form(props) {
         let newText = text.toLowerCase();
         setText(newText); 
     }
+    const handleExtraSpaces = ()=>{
+        let newText = text.split(/[ ]+/);
+        setText(newText.join(" "));
+    }
     const handleOnChange = (event)=>{
         setText(event.target.value);
     }
@@ -21,6 +25,7 @@ function Form(props) {
   <textarea className="form-control" value={text} onChange={handleOnChange} id="myBox" rows="8"></textarea>
   <button className="btn btn-primary" onClick={handleUpClick}>Uppercase</button>
   <button className="btn btn-primary mx-2" onClick={handleLoClick}>Lowercase</button>
+  <button className="btn btn-primary mx-2" onClick={handleExtraSpaces}>Remove Extra Spaces</button>
   </div>
   </div>
   <div className="container my-3">
