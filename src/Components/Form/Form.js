@@ -14,9 +14,9 @@ function Form(props) {
         let newText = text.split(/[ ]+/);
         setText(newText.join(" "));
     }
-    const handleOnChange = (event)=>{
+    /*const handleOnChange = (event)=>{
         setText(event.target.value);
-    }
+    }*/
     return (
 <> 
   <div className="container">
