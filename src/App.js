@@ -7,7 +7,7 @@ function App() {
     <>
     <Navbar title="TextCount" />
     <div className="container">
-    <Form heading="Enter the text to analyze" />
+    <Form heading="Write the text to analyze" />
     </div>
     </>
   );
